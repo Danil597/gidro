@@ -1,11 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 /* Шапка сайта */
 body {
 	height: 0;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 header {
 	display: flex;
@@ -66,7 +67,7 @@ nav a::after {
 	background-color: #42454a;
 	height: 2px;
 	width: 0;
-    transition: 0.5s all;
+	transition: 0.5s all;
 	display: flex;
 }
 nav a:hover::after {
@@ -104,8 +105,10 @@ span {
 	height: 50px;
 	border-radius: 0px;
 	background-color: #42454a;
-	margin: 37rem 5rem;
+	margin: 5rem 5rem;
 	color: white;
+	position: absolute;
+	top: 26rem;
 	font-size: 20px;
 }
 .card button:hover {
@@ -113,7 +116,7 @@ span {
 }
 .card label {
 	position: absolute;
-    margin: -39.5rem 11rem;
+	margin: 35rem 11rem;
 }
 .card-text3 {
 	color: #42454a;
@@ -122,7 +125,9 @@ span {
 }
 .characteristics {
 	display: flex;
-	margin: 44rem 6rem;
+	margin: 60rem 6rem;
+  position: relative;
+  top: 14rem;
 }
 .cards {
 	width: 156px;
@@ -143,7 +148,7 @@ span {
 	font-family: 'Poppins', sans-serif;
 }
 span {
-	font-size: 40px;
+	font-size: 28px;
 }
 .review {
 	margin: -36rem 32rem;
@@ -162,6 +167,9 @@ span {
 .advantages {
 	margin: -41rem 3rem;
 }
+.advantages ul li {
+	list-style-image: url(../img/Icon-list.png);
+}
 .adv li {
 	margin: 3rem 6rem;
 	font-family: 'Poppins', sans-serif;
@@ -177,20 +185,20 @@ footer {
 }
 footer img {
 	position: absolute;
-	z-index: 3;
+	z-index: 1;
 	margin: -22rem -1rem;
 }
 .footer-block-text {
 	display: flex;
 	gap: 9rem;
 	height: 17rem;
-    width: 130%;
+	width: 130%;
 	align-items: stretch;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Poppins',sans-serif;
-    align-content: center;
-    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 .text-footer {
@@ -200,7 +208,7 @@ footer img {
 }
 .text-footer a {
 	color: white;
-    text-decoration: none;
+	text-decoration: none;
 }
 .text-footer ul {
 	display: flex;
@@ -211,6 +219,41 @@ footer img {
 .text-footer h1 {
 	color: white;
 }
-.contact-img{
-    margin: 16rem;
+.contact-img {
+	margin: 16rem;
+}
+
+
+#callback {
+    width: 298px;
+    height: 149px;
+    background-color: grey;
+    position: fixed;
+    bottom: 30px;
+    transform: translateX(-100%);
+		z-index: 2;
+		transition: 0.5s all ;
+}
+#callback p {
+    color: #fff;
+    padding: 41px;
+}
+#callback::after {
+    content: "feedback";
+		color: white;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+		font-family: "Poppins ";
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px;
+    position: absolute;
+   	left: 14.8rem;
+    top: 3.8rem;
+    transform: rotate(-90deg);
+
+}
+#callback:hover {
+    transform: translateX(0%);
+		transition: 0.5s all ;
 }
